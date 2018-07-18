@@ -1,8 +1,8 @@
 ---
 title: Shell Scripting for Newbies
 published: false
-description: Learn the basics of linux bash to automatize your _tasks_
-tags: linux, bash, shell, script
+description: Learn the basics of shell scripting to automatize your tasks!
+tags: bash, shell, script, newbies
 ---
 
 Let's suppose you want to check your *any linux system* stats, you might probably use commands such as **w**, **date**, or **df**. That means you need to write three commands and check their results, one by one... Not the funniest hobby!
@@ -64,6 +64,25 @@ tmpfs           586M   17M  570M   3% /run
 tmpfs           2,9G   31M  2,9G   2% /dev/shm
 tmpfs           5,0M  4,0K  5,0M   1% /run/lock
 ```
+People might not understand the functions you are using in your script, so comment it using hashtags:
+
+
+```sh
+#/bin/bash
+#This shows users in this computer
+echo "Aliens using this computer:"
+w
+
+#This shows the date and time of this computer
+echo "What year am I?"
+date
+
+#This shows the disk usage of the computer
+echo "Is there any computer left?"
+df -h
+```
+
+##About##
 
 You can find all my scripts in [my github](https://github.com/azbardini/shellscript)!
 
